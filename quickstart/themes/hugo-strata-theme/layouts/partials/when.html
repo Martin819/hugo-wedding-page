@@ -1,0 +1,28 @@
+<section class="when-section">
+	<header class="major">
+		{{ with .Site.Params.when.title }}<h2><center>{{ . | markdownify }}</center></h2>{{ end }}
+	</header>
+	{{ with .Site.Params.when.date }}<p class="when-date">{{ . | markdownify }}</p>{{ end }}
+	{{ with .Site.Params.when.content }}<p class="when-content">{{ . | markdownify }}</p>{{ end }}
+<!--
+	<div class="clock" style="margin:2em;">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{{ .Site.BaseURL }}/js/flipclock.min.js"></script>
+		
+	<script type="text/javascript">
+		var clock;
+	
+		$(document).ready(function() {
+
+			// Instantiate a counter
+			clock = new FlipClock($('.clock'), 10, {
+				clockFace: 'Counter',
+				autoStart: true,
+				countdown: true
+			});
+				
+		});
+	</script>	
+-->
+</section>

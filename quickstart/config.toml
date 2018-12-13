@@ -1,0 +1,105 @@
+baseURL = "http://80.211.213.159/"
+title = "My Blog"
+theme = "hugo-strata-theme"
+
+[params]
+    background = "/images/bg99.jpg"
+    tint = "orange"
+    dateformat = "Mon, Jan 2, 2006"
+    date_format = "Mon, Jan 2, 2006"
+    description = "A website built through Hugo and blogdown."
+
+[params.about]
+		hide  = false
+		title = "Vítejte na našem svatebním webu!"
+		content = "Děkujeme, že jste tady. Naleznete zde důležité informace týkající se našeho svatebního dne a také užitečné tipy."
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Domů"
+	url  = "/"
+	weight = 5
+
+
+[[menu.main]]
+	name = "Program svatby"
+	url  = "posts/program"
+	weight = 10
+
+[[menu.main]]
+	name = "Obřad"
+	url  = "posts/obrad"
+	weight = 20
+
+[[menu.main]]
+        name = "Hostina"
+        url  = "posts/hostina"
+        weight = 30
+
+[[menu.main]]
+	name = "Párty"
+	url  = "posts/party"
+	weight = 40
+
+[[menu.main]]
+        name = "Ubytování"
+        url  = "posts/ubytovani"
+        weight = 45
+
+[[menu.main]]
+        name = "RSVP"
+        url  = "posts/rsvp"
+        weight = 50
+
+[[menu.main]]
+        name = "Dary"
+        url  = "posts/dary"
+        weight = 60
+
+[[menu.main]]
+        name = "Tipy"
+        url  = "posts/tipy"
+        weight = 70
+
+[params.sidebar]
+    avatar = "avatar5.jpg"
+
+[params.portfolio]
+    hide = true
+
+[params.recentposts]
+    hide = true
+
+[params.who]
+    hide = false
+    title = "Kdo?"
+    name1 = "Martin Polreich"
+    name2 = "Hana Vacková"
+
+[params.when]
+    hide = false
+    title = "Kdy?"
+    date = "1.6.2019"
+    content = "Začátek svatebního obřadu v 11:00"
+
+[params.where]
+    hide = false
+    title = "Kde?"
+    content = "Kostel Nanebevzetí Panny Marie, Neratov"
+
+[params.contact]
+	hide  = false
+	title = "Napište nám"
+	content = "Pokud nám potřebujete cokoliv vzkázat, můžete využít uvedené kontakty nebo tento kontaktní formulář."
+
+	address = []
+	phone = "774 605 566"
+	phone2 = "733 727 078"
+	email = "polreichmartin@gmail.com"
+	email2 = "hanka.vackova@gmail.com"
+
+	[params.contact.form]
+		name = "Vaše jméno"
+		email = "Váš e-mail"
+		message = "Zpráva"
+		submit = "Odeslat zprávu"

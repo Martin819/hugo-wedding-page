@@ -1,0 +1,8 @@
+{{ define "main" }}
+	<p>
+	    {{ .Content }}
+	</p>
+	<p class="post-footer">
+	</p>
+	{{ template "_internal/disqus.html" . }}
+{{ end }}

@@ -1,0 +1,18 @@
+<section class="where-section">
+	<header class="major">
+		{{ with .Site.Params.where.title }}<h2><center>{{ . | markdownify }}</center></h2>{{ end }}
+	</header>
+	{{ with .Site.Params.where.content }}<p class="where-place">{{ . | markdownify }}</p>{{ end }}
+
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+                function initMap() {
+                        var neratov = {lat: 50.2152092, lng: 16.5504597}
+                        var map = new google.maps.Map(document.getElementById('googleMap'), {zoom: 13, center: neratov});
+                        var marker = new google.maps.Marker({position: neratov, map: map});
+                }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu32KpPdsNzoczs61xgZ_IksdvEV3rYgE&callback=initMap"></script>
+
+</section>

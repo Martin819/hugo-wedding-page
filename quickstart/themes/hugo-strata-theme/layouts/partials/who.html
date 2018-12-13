@@ -1,0 +1,8 @@
+<section class="who-section">
+	<header class="major">
+		{{ with .Site.Params.who.title }}<h2><center>{{ . | markdownify }}</center></h2>{{ end }}
+	</header>
+	<p class="who-name">
+	<img class="who-image" height="300em" src="{{ .Site.BaseURL }}/images/avatar3.jpg">
+	</p>
+</section>
